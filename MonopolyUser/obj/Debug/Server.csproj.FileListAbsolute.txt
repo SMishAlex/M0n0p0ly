@@ -1,0 +1,9 @@
+D:\Dmitrevich\Monopoly\MonopolyUser\bin\Debug\MonopolyUser.exe.config
+D:\Dmitrevich\Monopoly\MonopolyUser\bin\Debug\MonopolyUser.exe
+D:\Dmitrevich\Monopoly\MonopolyUser\bin\Debug\MonopolyUser.pdb
+D:\Dmitrevich\Monopoly\MonopolyUser\obj\Debug\Server.csprojResolveAssemblyReference.cache
+D:\Dmitrevich\Monopoly\MonopolyUser\obj\Debug\Server.ServerForm.resources
+D:\Dmitrevich\Monopoly\MonopolyUser\obj\Debug\MonopolyUser.Properties.Resources.resources
+D:\Dmitrevich\Monopoly\MonopolyUser\obj\Debug\Server.csproj.GenerateResource.Cache
+D:\Dmitrevich\Monopoly\MonopolyUser\obj\Debug\MonopolyUser.exe
+D:\Dmitrevich\Monopoly\MonopolyUser\obj\Debug\MonopolyUser.pdb

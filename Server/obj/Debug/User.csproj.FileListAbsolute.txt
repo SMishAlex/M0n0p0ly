@@ -1,0 +1,9 @@
+D:\Dmitrevich\Monopoly\Server\bin\Debug\Server.exe.config
+D:\Dmitrevich\Monopoly\Server\bin\Debug\Server.exe
+D:\Dmitrevich\Monopoly\Server\bin\Debug\Server.pdb
+D:\Dmitrevich\Monopoly\Server\obj\Debug\Server.Properties.Resources.resources
+D:\Dmitrevich\Monopoly\Server\obj\Debug\User.csproj.GenerateResource.Cache
+D:\Dmitrevich\Monopoly\Server\obj\Debug\Server.exe
+D:\Dmitrevich\Monopoly\Server\obj\Debug\Server.pdb
+D:\Dmitrevich\Monopoly\Server\obj\Debug\User.csprojResolveAssemblyReference.cache
+D:\Dmitrevich\Monopoly\Server\obj\Debug\User.UserForm.resources
