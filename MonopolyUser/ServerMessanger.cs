@@ -62,10 +62,8 @@ namespace Server
                 {
                     //отписываемся
                     Clients[i].HaveMessage -= _client_message;
-                    Clients[i].ClientDisconect -= SRV_ClientDisconect;
                     //подписываемся
                     Clients[i].HaveMessage += _client_message;
-                    Clients[i].ClientDisconect += SRV_ClientDisconect;
                     Thread th = new Thread(Clients[i].Recive);
                     th.Start();
                 }
@@ -112,6 +110,12 @@ namespace Server
                     int size = temp.Receive(bufer);
                     Clients.Add(new Client(temp, Encoding.ASCII.GetString(bufer, 0, size)));
                     UserConnected(string.Format("User {0}", Clients.Last().Name));
+                    //подписываемся
+                    Clients.Last().ClientDisconect += SRV_ClientDisconect;
+                    Clients.Last().HaveMessage += _client_message;
+                    //начинаем слушать
+                    Thread th = new Thread(Clients.Last().Recive);
+                    th.Start();
                     i++;
                 }
             }

@@ -35,6 +35,8 @@ namespace Server
             MessageBox.Show(string.Format("User {0} has been disconected", obj));
             Action Log = () => listBox1.Items.Add(obj + " has been disconnected\n");
             Invoke(Log);
+            Action Clear = () => comboBox1.Items.Remove("User " + obj);
+            Invoke(Clear);
         }
 
         private void S1_NewMessage(string obj)
@@ -59,7 +61,7 @@ namespace Server
         private void button3_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add("Start game");
-            S1.ListenAll();            
+            S1.ListenAll();
         }
 
         private void button2_Click(object sender, EventArgs e)

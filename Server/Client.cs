@@ -120,6 +120,12 @@ namespace User
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
+            (user as UserMessanger).Disconnect();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            user.SendToSRV(textBox2.Text);
         }
     }
 }

@@ -68,7 +68,7 @@ namespace User
                 byte[] msg = Encoding.ASCII.GetBytes("1");
                 MySock.SetSocketOption(SocketOptionLevel.Socket,
                     SocketOptionName.Broadcast, 1);
-                MySock.SendTo(msg, ipe);                
+                MySock.SendTo(msg, ipe);
                 //слушаем ответы
                 EndPoint ep = (EndPoint)ipe;
                 byte[] data = new byte[1024];
@@ -146,7 +146,7 @@ namespace User
             }
             catch
             {
-                throw new Exception("Can't send message, please try to reconnect to your server");
+                Error?.Invoke("Can't send message, please try to reconnect to your server");
             }
         }
 
@@ -170,5 +170,14 @@ namespace User
             }
         }
         #endregion
+
+        public void Disconnect()
+        {
+            NewMsg = null;
+            NewUDPMsg = null;
+            Error = null;
+        UDP.Close();
+            SRV.Close();
+        }
     }
 }
